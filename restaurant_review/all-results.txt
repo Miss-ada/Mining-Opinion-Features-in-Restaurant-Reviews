@@ -1,0 +1,172 @@
+1. absolute features
+
+nb-word_features-absolute-model-P3.pickle classifier on restaurant-development.data
+
+Accuracy    0.77000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<50> . |
+positive | 23<27>|
+---------+-------+
+(row = reference; col = test)
+
+
+nb-word_features-absolute-model-P3.pickle classifier on restaurant-testing.data
+
+Accuracy    0.76000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<49> 1 |
+positive | 23<27>|
+---------+-------+
+(row = reference; col = test)
+
+===================================
+2. binary features
+This is the implementation of requirement in this assignment. Each features is the len(vocabulary).
+
+nb-word_features-binary-model-P3.pickle classifier on restaurant-development.data
+
+Accuracy    0.66000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<16>34 |
+positive |  .<50>|
+---------+-------+
+(row = reference; col = test)
+
+
+nb-word_features-binary-model-P3.pickle classifier on restaurant-testing.data
+
+Accuracy    0.63000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<13>37 |
+positive |  .<50>|
+---------+-------+
+(row = reference; col = test)
+
+
+**********************************************************************
+
+This is also an implementation of binary feature, but each feature is len(ngram of such review) in Line 153-157 of code. which results higher accuracy.
+
+nb-word_features-binary-model-P3.pickle classifier on restaurant-development.data
+
+Accuracy    0.76000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<50> . |
+positive | 24<26>|
+---------+-------+
+(row = reference; col = test)
+
+
+nb-word_features-binary-model-P3.pickle classifier on restaurant-testing.data
+
+Accuracy    0.75000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<50> . |
+positive | 25<25>|
+---------+-------+
+(row = reference; col = test)
+
+================================
+3. relative improved(with binning)
+I tried different combination of binning, and take the first setup
+
+			test	dev
+if freq < 3 else 5	0.57	0.63
+if freq < 4 else 5	0.59	0.60
+if freq < 3 else 4	0.56	0.62
+if freq < 2 else 4	0.50	0.58
+if freq < 4 else 6	0.54	0.61
+
+
+nb-word_features-relative-improved-model-P3.pickle classifier on restaurant-development.data
+
+Accuracy    0.63000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<27>23 |
+positive | 14<36>|
+---------+-------+
+(row = reference; col = test)
+
+
+
+nb-word_features-relative-improved-model-P3.pickle classifier on restaurant-testing.data
+
+Accuracy    0.57000
+
+         |  n  p |
+         |  e  o |
+         |  g  s |
+         |  a  i |
+         |  t  t |
+         |  i  i |
+         |  v  v |
+         |  e  e |
+---------+-------+
+negative |<23>27 |
+positive | 16<34>|
+---------+-------+
+(row = reference; col = test)
+
