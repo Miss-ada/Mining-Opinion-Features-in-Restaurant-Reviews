@@ -16,4 +16,5 @@
 
 - INSTALL PYTHON LIBRARY py-corenlp using: pip install pycorenlp reference: https://github.com/smilli/py-corenlp
 
-- START CoreNLP SERVER: cd into where you installed the pkg and run java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+- START CoreNLP SERVER: cd into where you installed the pkg and
+run java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
