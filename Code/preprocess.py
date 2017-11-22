@@ -1,5 +1,7 @@
 from pycorenlp import StanfordCoreNLP
 from nltk.tree import Tree
+import pandas as pd
+import os
 
 
 def extract_noun_phrases(tree):
@@ -15,7 +17,14 @@ def np_filter(subtree):
 
 if __name__ == '__main__':
     corenlp = StanfordCoreNLP('http://localhost:9000')
-    text = 'I saw a boy with a telescope.'
+
+    # Read input
+    data_dir = '../'
+    input_file = 'Table\ 17'
+    df = pd.read_csv
+
+
+    text = 'A boy is looking out with a telescope'
     # Define your output here
     output = corenlp.annotate(text,
                           properties={'annotators': 'tokenize,pos,parse,sentiment',
@@ -30,5 +39,5 @@ if __name__ == '__main__':
     # extract others
     sentiment_value = output['sentences'][0]['sentimentValue']
     sentiment = output['sentences'][0]['sentiment']
-    tokens = output['sentences'][0]['tokens']
-    print('sentiment: {0}\nsentiment value: {1}\ntokens: {2}\n'.format(sentiment, sentiment_value, tokens))
+    # tokens = output['sentences'][0]['tokens']
+    # print('sentiment: {0}\nsentiment value: {1}\ntokens: {2}\n'.format(sentiment, sentiment_value, tokens))
