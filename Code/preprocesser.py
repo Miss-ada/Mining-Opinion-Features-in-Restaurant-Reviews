@@ -25,16 +25,10 @@ if not os.path.isfile(REVIEW_TXT):
                 f.write(sent + '\n')
 
 # Run pos tag and save to a file
-# subprocess.call("java -mx300m -cp " + TAGGER_DIR + "stanford-postagger.jar" + \
-#   ": edu.stanford.nlp.tagger.maxent.MaxentTagger -sentenceDelimiter newline " + \
-#   "-model " + TAGGER_DIR + "models/wsj-0-18-bidirectional-distsim.tagger -textFile " + \
-#   REVIEW_TXT + " -outputFile " + OUTPUT_POSTAG, shell=True)
+subprocess.call("java -mx300m -cp " + TAGGER_DIR + "stanford-postagger.jar" + \
+  ": edu.stanford.nlp.tagger.maxent.MaxentTagger -sentenceDelimiter newline " + \
+  "-model " + TAGGER_DIR + "models/wsj-0-18-bidirectional-distsim.tagger -textFile " + \
+  REVIEW_TXT + " -outputFile " + OUTPUT_POSTAG, shell=True)
 
 # Run parser and save to a file
-# subprocess.call("java -mx1500m -cp \"*\"" + \
-#    " edu.stanford.nlp.parser.lexparser.LexicalizedParser " + \
-#   "-outputFormat \"penn\" -sentences newline " + \
-#   "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz -textFile " + \
-#   REVIEW_TXT + " -outputfile " + OUTPUT_PARSED_TREE, shell=True)
-
 subprocess.call(PARSER_DIR + "lexparser.sh " + REVIEW_TXT + " > " + OUTPUT_PARSED_TREE, shell=True)
