@@ -18,15 +18,8 @@
 
 - DOWNLOAD
 
-* TAGGER & PARSE: https://nlp.stanford.edu/software/tagger.shtml#Download
+** TAGGER & PARSE: https://nlp.stanford.edu/software/tagger.shtml#Download
 https://nlp.stanford.edu/software/lex-parser.shtml#Download
-
-* OR CoreNLP SERVE: https://stanfordnlp.github.io/CoreNLP/index.html#download
-
-INSTALL PYTHON LIBRARY py-corenlp using: pip install pycorenlp reference: https://github.com/smilli/py-corenlp
-
-START CoreNLP SERVER: cd into where you installed the pkg and
-run java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 
 3. extract_restaurant_data.py:
 
