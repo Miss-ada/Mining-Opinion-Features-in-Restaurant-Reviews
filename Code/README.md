@@ -2,9 +2,9 @@
 
 - Extract all restaurant data from original yelp dataset
 
-- DOWNLOAD DATASET here: https://www.yelp.com/dataset/challenge
+- Download dataset here: https://www.yelp.com/dataset/challenge
 
-- RESULTING FILE: restaurant.json, restaurant_review.csv (too big, not included)
+- Resulting files: restaurant.json, restaurant_review.csv (too big, not included)
 
 - REVIEWS COUNT:
 
@@ -16,10 +16,7 @@
 
 - Run standfor tagger and parser on review data
 
-- DOWNLOAD
-
-** TAGGER & PARSE: https://nlp.stanford.edu/software/tagger.shtml#Download
-https://nlp.stanford.edu/software/lex-parser.shtml#Download
+- Download standford tagger and parser files
 
 3. extract_restaurant_data.py:
 
