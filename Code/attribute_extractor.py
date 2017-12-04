@@ -130,10 +130,10 @@ def jj_filter(subtree):
 #     return pairs
 
 if __name__ == '__main__':
-    parsed_file = '../Data/Table_17_sentences_parser.json'
+    parsed_file = '../Data/Table_17_subjective_parser.json'
     candidates = extract_attribute_opinion_pair(parsed_file)
 
-    with open('../Data/candidates_attributes.json', 'w') as f:
+    with open('../Data/candidates_attributes_subjective.json', 'w') as f:
         json.dump(candidates, f)
 
 

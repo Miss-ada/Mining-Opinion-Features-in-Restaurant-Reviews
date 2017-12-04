@@ -1,3 +1,5 @@
+System pipeline:
+
 1. extract_restaurant_data.py
 
 - Extract all restaurant data from original yelp dataset
@@ -18,13 +20,21 @@
 
 - Download standford tagger and parser files
 
-3. extract_restaurant.py:
 
-- Example code
-
-4. attribute_extractor.pu:
+3. attribute_extractor.py:
 
 - Reading parsed file and extract attributes
 
 - Resulting file: /Data/candidates_attributes.json
 
+4. prepare_classification.py:
+
+- Extract all attributes from 3 and manually label
+
+- Prepare input file for classification
+
+5. attribute_classification.py:
+
+- Classify attributes into Food, Service, Decor, and Other
+
+- Decision Tree model

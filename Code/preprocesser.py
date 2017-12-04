@@ -22,17 +22,17 @@ OUTPUT_PARSED_TREE = os.path.join(DATA_DIR, 'Table_17_subjective_parser.json')
 
 #  1. Tokenize review sentences and write to a txt file
 # if not os.path.isfile(REVIEW_SENT):
-df = pd.read_csv(REVIEW_CSV, encoding='latin-1')
-reviews = df['review'].values
-review_sents = []
-
-for review in reviews:
-    sentences = nltk.sent_tokenize(review)
-    for sent in sentences:
-        if len(sent.strip()) != 0:
-            review_sents.append(sent.strip())
-df1 = pd.DataFrame(review_sents)
-df1.to_csv(REVIEW_SENT, index=False, header=None)
+# df = pd.read_csv(REVIEW_CSV, encoding='latin-1')
+# reviews = df['review'].values
+# review_sents = []
+#
+# for review in reviews:
+#     sentences = nltk.sent_tokenize(review)
+#     for sent in sentences:
+#         if len(sent.strip()) != 0:
+#             review_sents.append(sent.strip())
+# df1 = pd.DataFrame(review_sents)
+# df1.to_csv(REVIEW_SENT, index=False, header=None)
 
 # 2. Run pos tag and save to a file
 subprocess.call("java -mx1500m -cp " + TAGGER_DIR + "stanford-postagger.jar" + \
