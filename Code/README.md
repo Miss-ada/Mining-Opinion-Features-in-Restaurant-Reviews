@@ -18,7 +18,13 @@
 
 - Download standford tagger and parser files
 
-3. extract_restaurant_data.py:
+3. extract_restaurant.py:
 
-- Reading in tagger and parser of reviews, generate candidate (attribute, opinion) pair
+- Example code
+
+4. attribute_extractor.pu:
+
+- Reading parsed file and extract attributes
+
+- Resulting file: /Data/candidates_attributes.json
 
