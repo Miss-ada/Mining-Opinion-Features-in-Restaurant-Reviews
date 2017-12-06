@@ -16,6 +16,20 @@ Date: 12/3/17
 Implement Decision Tree Attribute classification 
 Table 17 - subjective/not:  514/1200, att: 21/49
 """
+PRETRAINED_FILE = '/Users/Daisy/Desktop/Speech-Act-Classifier/Speech Act Classifier/Code/glove.6B/glove.6B.50d.txt'
+EMBEDDING_DIM = 50
+PRETRAIN = True
+
+def loadGloveModel(gloveFile):
+    f = open(gloveFile,'r')
+    model = {}
+    for line in f:
+        splitLine = line.split()
+        word = splitLine[0]
+        embedding = np.array([float(val) for val in splitLine[1:]])
+        model[word] = embedding
+    return model
+
 
 def encode_label(labels, encoder=None):
     if encoder is None:
@@ -34,14 +48,26 @@ def decode_label(y, encoder):
     return encoder.inverse_transform(y)
 
 
-def vectorize_text(texts, vectorizer=None):
-    if vectorizer is None:
-        vectorizer = CountVectorizer(decode_error='ignore', stop_words='english', min_df=2)
-        X = vectorizer.fit_transform(texts).toarray()
+def vectorize_text(texts, vectorizer=None, pretrain=False):
+    if pretrain:
+        embedding = loadGloveModel(PRETRAINED_FILE)
+        X = np.zeros((len(texts), EMBEDDING_DIM), dtype=float)
+        for i, phrase in enumerate(texts):
+            words = phrase.split()
+            phrase_vec = np.zeros(EMBEDDING_DIM)
+            for word in words:
+                if word in embedding:
+                    phrase_vec += embedding[word]
+            X[i] = phrase_vec
+        return X
     else:
-        X = vectorizer.transform(texts).toarray()
-    X = tfidf_transform(X)
-    return X, vectorizer
+        if vectorizer is None:
+            vectorizer = CountVectorizer(decode_error='ignore', stop_words='english', min_df=2)
+            X = vectorizer.fit_transform(texts).toarray()
+        else:
+            X = vectorizer.transform(texts).toarray()
+        X = tfidf_transform(X)
+        return X, vectorizer
 
 
 def tfidf_transform(counts):
@@ -60,15 +86,18 @@ if __name__ == '__main__':
     # Define directory
     data_dir = '../Data/labelled_data'
     model_dir = '../Data/classification_result'
-    train_file = os.path.join(data_dir, 'train.csv')
+    train_file = os.path.join(data_dir, 'train1.csv')
     out_vec_file = os.path.join(model_dir, 'vectorizer.pkl')
-    out_encoder_file = os.path.join(model_dir, 'encoder.pkl')
-    out_model_file = os.path.join(model_dir, 'decision_tree.pkl')
-    report_file = os.path.join(model_dir, 'dt_report.txt')
+    out_encoder_file = os.path.join(model_dir, 'encoder_pretrain.pkl')
+    out_model_file = os.path.join(model_dir, 'decision_tree_pretrain.pkl')
+    report_file = os.path.join(model_dir, 'dt_report_pretrain.txt')
 
     # turn text into matrix X and vectors y
     attributes, labels = process_text(train_file)
-    X, vectorizer = vectorize_text(attributes)
+    if PRETRAIN:
+        X = vectorize_text(attributes, pretrain=PRETRAIN)
+    else:
+        X, vectorizer = vectorize_text(attributes)
     y, encoder = encode_label(labels)
 
     # Single split
@@ -100,8 +129,9 @@ if __name__ == '__main__':
 
         if accuracy > best_accuracy:
             # Save best model
-            with open(out_vec_file, 'wb') as vec:
-                pickle.dump(vectorizer, vec, protocol=pickle.HIGHEST_PROTOCOL)
+            if not PRETRAIN:
+                with open(out_vec_file, 'wb') as vec:
+                    pickle.dump(vectorizer, vec, protocol=pickle.HIGHEST_PROTOCOL)
             with open(out_encoder_file, 'wb') as le:
                 pickle.dump(encoder, le, protocol=pickle.HIGHEST_PROTOCOL)
             with open(out_model_file, 'wb') as ml:
