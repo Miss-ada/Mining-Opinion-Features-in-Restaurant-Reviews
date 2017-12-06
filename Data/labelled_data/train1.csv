@@ -1,0 +1,781 @@
+attribute,label
+cut,o
+the service,s
+this place,o
+the food,f
+vegas,o
+service,s
+one,o
+us,o
+food,f
+las vegas,o
+everything,o
+the steak,f
+steak,f
+dinner,f
+the steaks,f
+meat,f
+`` i,o
+this restaurant,o
+the restaurant,o
+the sides,f
+the best,o
+steaks,f
+a group,o
+the staff,s
+everyone,o
+a little,o
+the table,d
+sides,f
+a bit,o
+the price,o
+the meal,f
+the palazzo,f
+top notch,o
+the place,o
+the best steak,f
+friends,o
+my husband,o
+'',o
+5,o
+the menu,s
+my boyfriend,o
+our server,s
+the waiter,s
+something,o
+last night,o
+my wife,o
+the meat,f
+perfection,o
+the hostess,s
+the server,s
+the bar,d
+vegas '',o
+the prices,o
+top,o
+first,o
+the atmosphere,d
+my friend,o
+wolfgang puck,o
+`` we,o
+good,o
+a lot,o
+the strip,o
+my steak,f
+beverly hills,o
+the cut,o
+my life,o
+ambiance,o
+went,o
+dessert,f
+staff,o
+our table,d
+the first time,o
+reservations,s
+beef,f
+bread,f
+the mac and cheese,f
+`` cut,o
+service '',s
+great,o
+time,o
+the bread,f
+the servers,s
+the wait staff,s
+the decor,d
+'' '',o
+the ambiance,o
+it '',o
+my experience,o
+people,o
+two,o
+a steakhouse,o
+a party,o
+a bunch,o
+5 stars,o
+my friends,o
+a place,o
+the moment,o
+nothing,o
+4,o
+the presentation,o
+mine,o
+excellent service,s
+the world,o
+morton 's,o
+new york,o
+the best steak house,o
+our waiter,s
+the wine list,f
+my second time,o
+the ribeye,f
+atmosphere,d
+your mouth,o
+it 's,o
+a steak,f
+this review,o
+wagyu,o
+restaurant,o
+the best thing,o
+&,o
+last week,o
+wine,f
+a review,o
+an appetizer,f
+every time,o
+my husband and i,o
+the wagyu,f
+a reservation,s
+the japanese wagyu,f
+our steaks,f
+this place,o
+the food,f
+food,f
+vegas,o
+the portions,f
+us,o
+the chicken,f
+the wait,s
+one,o
+breakfast,f
+hash house,o
+everything,o
+service,s
+portions,f
+waffles,f
+the service,s
+huge portions,f
+the strip,o
+the menu,s
+the place,o
+my husband,o
+'',o
+a little,o
+hash house a go go,o
+a lot,o
+las vegas,o
+the restaurant,o
+a bit,o
+bacon,f
+`` i,o
+chicken,f
+this restaurant,o
+people,o
+the chicken and waffles,f
+large portions,f
+the waffles,f
+brunch,f
+the fried chicken,f
+our server,s
+eggs,f
+the first time,o
+our food,f
+the quad,o
+my wife,o
+something,o
+this location,o
+my friends,o
+the one,o
+my boyfriend,o
+my friend,o
+food '',f
+the price,o
+great,o
+san diego,o
+time,o
+vegas '',o
+the imperial palace,d
+first,o
+the prices,o
+our waitress,s
+our waiter,s
+the french toast,f
+a go,o
+imperial palace,d
+a table,d
+the waiter,s
+the sage fried chicken,f
+the staff,s
+the linq,o
+chicken and waffles,f
+great food,f
+huge,o
+the sage fried chicken benedict,f
+an hour,s
+the size,o
+everyone,o
+top,o
+the bar,d
+someone,o
+the portion,f
+good food,f
+a friend,o
+a wait,s
+two,o
+the sage chicken,f
+'' '',o
+dinner,f
+the server,s
+`` this place,o
+the hash house,o
+yelp,o
+place,o
+the day,o
+a meal,f
+24/7,s
+wait,s
+lots,o
+the line,s
+fried chicken,f
+the fried chicken benedict,f
+the meal,f
+the corned beef hash,f
+share,f
+a must,o
+great service,s
+my food,f
+big portions,f
+two people,o
+anything,o
+a plate,d
+the bacon,f
+coffee,f
+lunch,f
+&,o
+the plate,d
+this time,o
+drinks,f
+potatoes,f
+the reviews,o
+the waitress,s
+next time,o
+prices,o
+man vs food,f
+a group,o
+the linq hotel,o
+flavor,f
+the portion sizes,f
+my first time,o
+a place,o
+our table,d
+the time,o
+the andy 's,o
+good,o
+it '',o
+every time,o
+the hotel,o
+5,o
+staff,s
+the casino,o
+nothing,o
+`` we,o
+their food,f
+first time,o
+my meal,f
+2,o
+order,s
+friends,o
+night,o
+andy 's,o
+half,o
+hash,o
+sharing,o
+the waffle,f
+the table,d
+5 stars,o
+house,d
+the hype,o
+the dish,f
+way,o
+my wife and i,o
+the hostess,s
+a long wait,s
+the pancake,f
+went,o
+the plates,d
+breakfast '',f
+the best,o
+my husband and i,o
+the amount,f
+the wait time,s
+line,s
+the quality,f
+it 's,o
+a long time,s
+plenty,f
+bloody mary,f
+4,o
+a go go,o
+the presentation,o
+a side,f
+biscuits and gravy,f
+the middle,f
+a couple,o
+45 minutes,s
+the biscuit,f
+`` it,o
+town,o
+the bloody mary,f
+french toast,f
+restaurant,o
+the biscuits,f
+the flavor,f
+big,o
+home,o
+biscuits,f
+the portion size,f
+sahara,o
+the way,o
+the taste,f
+the eggs,f
+the pancakes,f
+24 hours,s
+sage fried chicken,f
+40 minutes,s
+leftovers,o
+quality,f
+the rest,o
+a restaurant,o
+came,o
+gravy,f
+a fan,d
+the dishes,f
+the wait staff,s
+your food,f
+man vs. food,f
+long,o
+things,o
+a party,o
+benedict,f
+the drinks,f
+one plate,d
+the morning,o
+the burger,f
+so much food,f
+the meatloaf,f
+the location,o
+man,o
+this place '',o
+the chicken & waffles,f
+6,o
+scratch,o
+the breakfast,f
+a great,o
+sunday,o
+their portions,f
+2 people,o
+$15 ,o
+3,o
+our party,o
+4 stars,o
+our group,o
+the hash,o
+portion size,f
+morning,o
+the best breakfast,f
+the servings,f
+my experience,o
+an entree,f
+my boyfriend and i,o
+anyone,o
+my favorite,o
+a burger,f
+the top,o
+a while,o
+the huge portions,f
+wow,o
+the blt bloody mary,f
+times,o
+the mashed potatoes,f
+kind,o
+this one,o
+bloody mary 's,f
+course,o
+both times,o
+waffle,f
+the chicken benedict,f
+amazing food,f
+a sunday,o
+husband,o
+service '',s
+my second time,o
+flavors,f
+mashed potatoes,f
+a great place,d
+`` this,o
+boy,o
+!!,o
+!!!,o
+definitely,o
+waffles '',f
+medium,o
+our order,s
+reviews,o
+a ton,o
+this past weekend,o
+the food '',f
+20 minutes,s
+the sage,f
+3 people,o
+us '',o
+a biscuit,f
+the potatoes,f
+the night,o
+one meal,f
+server,s
+my life,o
+the spot,o
+the food portions,f
+our friends,o
+the andy 's sage fried chicken,f
+ok,o
+reservations,s
+point,o
+amazing,o
+others,o
+farm,o
+my girlfriend,o
+your appetite,f
+a seat,d
+last time,o
+your name,o
+front,o
+this dish,f
+our drinks,f
+last year,o
+hh,o
+our trip,o
+always,o
+years,o
+the atmosphere,d
+presentation,d
+many,o
+mine,o
+none,o
+delicious,o
+mary 's,o
+several times,o
+my mind,o
+top notch,d
+price,o
+sage,f
+my friend and i,o
+the weekend,o
+highly,o
+the vegas strip,o
+no wait,s
+many times,o
+perfection,o
+meat,f
+today,o
+the side,f
+fries,f
+the only reason,o
+our first time,o
+great things,o
+an appetite,f
+the experience,o
+all day,o
+a hash house,o
+`` you,o
+quantity,o
+fried chicken and waffles,f
+my sister,o
+last week,o
+one thing,o
+pancake,f
+much,o
+a try,o
+lv,o
+my opinion,o
+10,o
+giant portions,f
+the only thing,o
+portion sizes,f
+the linq casino,o
+the corned beef,f
+the meals,f
+`` the food,f
+many people,o
+a little bit,o
+taste,f
+the back,o
+the hash house a go go,o
+1,o
+cheese,f
+the same thing,o
+friday,o
+the manager,s
+the sahara location,o
+the door,d
+the coffee,f
+the quad hotel,o
+every bite,f
+a lot of food,f
+dishes,f
+9,o
+the sage fried chicken and waffles,f
+the '',o
+pancakes,f
+crispy potatoes,f
+my family,o
+awesome,o
+good service,s
+a saturday morning,o
+each time,o
+a great experience,o
+much food,f
+a bunch,o
+omg,o
+size,o
+portions '',f
+bacon '',f
+pictures,d
+a long line,s
+the bartender,s
+no one,o
+one person,o
+hhagg,o
+plates,d
+a table '',d
+10am,o
+a review,o
+10 minutes,s
+all the food,f
+the sage chicken and waffles,f
+the fried chicken eggs benedict,f
+! '',o
+the amount of food,f
+the eggs benedict,f
+2 stars,o
+`` huge portions '',f
+last night,o
+a dish,f
+`` food,f
+the end,o
+the bacon waffles,f
+the salad,f
+the decor,d
+tonight,o
+fresh,o
+the bill,s
+this review,o
+the two of us,o
+the two,o
+my bf,o
+good '',o
+eggs '',f
+this spot,o
+late night,o
+the waiting area,d
+portion,f
+tons,o
+chicken benedict,f
+reasonable prices,o
+a big eater,o
+the man,o
+five stars,o
+enough food,f
+hours,o
+no idea,o
+linq,o
+the customer service,s
+a night,o
+the best food,f
+the food and service,f
+the buffet,f
+an understatement,o
+two eggs,f
+average,o
+overall,o
+the host,s
+u,o
+the kitchen,d
+the fact,o
+better,o
+good things,o
+huge !!,o
+the inside,d
+the first place,o
+the benedict,f
+your meal,f
+our last day,o
+the chipotle sauce,f
+the chicken pot pie,f
+the snickers pancake,f
+all the way,o
+a buffet,f
+food portions,f
+a huge fan,d
+go,o
+atmosphere,d
+the second floor,d
+let 's,o
+a sunday morning,o
+bacon waffles,f
+waitress,s
+vacation,o
+the burgers,f
+the name,o
+wait time,s
+all the reviews,o
+our way,o
+amazing !!,o
+multiple times,o
+`` the wait,s
+a long,o
+a piece,o
+the bottom,o
+the servers,s
+a friday morning,o
+the place to go,o
+the serving sizes,f
+places,o
+seating,d
+`` came,o
+chunks,f
+this world,o
+our room,o
+the long wait,s
+plate,d
+the tractor combo,f
+chipotle sauce,f
+sauce,f
+the large portions,f
+delicious food,f
+the money,o
+the meatloaf hash,f
+holy,o
+my son,o
+the san diego location,o
+2 hours,s
+special,o
+denny 's,o
+a dent,o
+walking,o
+tv,d
+best,o
+our meal,f
+the lines,s
+my next trip,o
+location,o
+waiter,s
+the syrup,f
+their fried chicken,f
+a great price,o
+maple syrup,f
+11am,o
+choice,o
+adam richman,o
+a big deal,f
+four,o
+the sauce,f
+the linq '',o
+a great meal,f
+super,o
+three people,o
+a plus,o
+11:30 AM,o
+casino,o
+one dish,f
+a day,o
+the pork tenderloin,f
+2-3 people,o
+the sage chicken benedict,f
+no line,o
+the entrance,d
+two times,o
+comfort food,f
+the flapjack,o
+servings,f
+the strip '',o
+the fries,f
+the escalators,o
+3 stars,o
+a great breakfast,f
+the reason,o
+the tractor driver combo,o
+a bloody mary,f
+the ip,o
+fun,o
+a weekend,o
+my friends and i,o
+everyone 's,o
+a trip,o
+a picture,d
+most people,o
+hash house a go go '',o
+2 eggs,f
+the skin,o
+my expectations,o
+my group,o
+my order,s
+a recommendation,o
+the salmon,f
+three,o
+scrambled eggs,f
+tip,o
+andy 's sage fried chicken,f
+the hubby,o
+downstairs,d
+huge !!!,o
+sooo,o
+a show,s
+a few times,o
+toast,f
+avocado '',f
+the imperial,d
+the flavors,f
+the chicken and waffle,f
+`` there,o
+hash house a go,o
+beef,s
+well,o
+table 17,o
+the service,s
+the food,f
+the menu,s
+us,o
+this place,o
+food,f
+dinner,f
+service,s
+a little,o
+brunch,f
+the restaurant,o
+everything,o
+a bit,o
+top,o
+our server,s
+the side,o
+one,o
+wine,f
+the servers,s
+the steak,f
+dessert,f
+my main,o
+my friend,o
+the decor,d
+leslieville,o
+something,o
+the place,o
+the polenta,f
+polenta,f
+reservations,f
+the bar,d
+risotto,f
+toronto,o
+my date,o
+the hot balls,f
+the chef,o
+the night,o
+short ribs,f
+the end,o
+two,o
+the scallops,f
+bread,f
+a plate,d
+great food,f
+the dish,f
+the server,s
+lamb,f
