@@ -12,6 +12,8 @@ Presentation: https://docs.google.com/a/ucsc.edu/presentation/d/1cH6E-HoVkPjdQDz
 
 Final report :https://docs.google.com/a/ucsc.edu/document/d/1sDYGpHVSZNjVlWseJR8SqPZC2IbgxOURlXKFscH2_PY/edit?usp=sharing
 
+Final report overleaf: https://www.overleaf.com/12684248kmrttrfsykrz#/48934851/
+
 ## Reference:
 
 https://github.com/clarkkev/restaurant-opinion-mining
