@@ -18,7 +18,7 @@ Table 17 - subjective/not:  514/1200, att: 21/49
 """
 PRETRAINED_FILE = '/Users/Daisy/Desktop/Speech-Act-Classifier/Speech Act Classifier/Code/glove.6B/glove.6B.50d.txt'
 EMBEDDING_DIM = 50
-PRETRAIN = True
+PRETRAIN = False
 
 def loadGloveModel(gloveFile):
     f = open(gloveFile,'r')
@@ -100,50 +100,68 @@ if __name__ == '__main__':
         X, vectorizer = vectorize_text(attributes)
     y, encoder = encode_label(labels)
 
-    # Single split
+
+    # Single split for visulization
     # X_train, X_val, y_train, y_val = train_test_split(X, y, random_state=1, test_size=0.2)
 
+    # Training
+    model = tree.DecisionTreeClassifier()
+    model.fit(X, y)
+    filename = 'pretrain_' + str(PRETRAIN) + '.dot'
+    graph_file = os.path.join(model_dir, filename)
+    with open(graph_file, "w") as f:
+        f = tree.export_graphviz(model, out_file=f)
+
+
+
+
+
+
+
+
+
+
     # 10 fold cross validation
-    kf = KFold(n_splits=10, shuffle=True, random_state=1)
-
-    accuracies = []
-    f1s = []
-    best_accuracy = 0
-    for train_idx, val_idx in kf.split(X):
-        X_train, X_val = X[train_idx], X[val_idx]
-        y_train, y_val = y[train_idx], y[val_idx]
-
-
-        # Training
-        model = tree.DecisionTreeClassifier()
-        model.fit(X_train, y_train)
-        y_predict = model.predict(X_val)
-
-
-        # Get result
-        accuracy = accuracy_score(y_val, y_predict)
-        f1 = f1_score(y_val, y_predict, average='weighted')
-        accuracies.append(accuracy)
-        f1s.append(f1)
-
-
-        if accuracy > best_accuracy:
-            # Save best model
-            if not PRETRAIN:
-                with open(out_vec_file, 'wb') as vec:
-                    pickle.dump(vectorizer, vec, protocol=pickle.HIGHEST_PROTOCOL)
-            with open(out_encoder_file, 'wb') as le:
-                pickle.dump(encoder, le, protocol=pickle.HIGHEST_PROTOCOL)
-            with open(out_model_file, 'wb') as ml:
-                pickle.dump(model, ml, protocol=pickle.HIGHEST_PROTOCOL)
-            with open(report_file, 'w') as f:
-                f.write('\nClassification_report: \n')
-                f.write(classification_report(y_val, y_predict, target_names=encoder.classes_))
-
-    avg_accuracy = str(np.sum(accuracies)/len(accuracies))
-    avg_f1 = str(np.sum(f1s)/len(f1s))
-    with open(report_file, 'a') as f:
-        f.write('Average accuracy: ')
-        f.write(avg_accuracy)
-        f.write('\nAverage f1: ')
-        f.write(avg_f1)
+    # kf = KFold(n_splits=10, shuffle=True, random_state=1)
+    #
+    # accuracies = []
+    # f1s = []
+    # best_accuracy = 0
+    # for train_idx, val_idx in kf.split(X):
+    #     X_train, X_val = X[train_idx], X[val_idx]
+    #     y_train, y_val = y[train_idx], y[val_idx]
+    #
+    #
+    #     # Training
+    #     model = tree.DecisionTreeClassifier()
+    #     model.fit(X_train, y_train)
+    #     y_predict = model.predict(X_val)
+    #
+    #
+    #     # Get result
+    #     accuracy = accuracy_score(y_val, y_predict)
+    #     f1 = f1_score(y_val, y_predict, average='weighted')
+    #     accuracies.append(accuracy)
+    #     f1s.append(f1)
+    #
+    #
+    #     if accuracy > best_accuracy:
+    #         # Save best model
+    #         if not PRETRAIN:
+    #             with open(out_vec_file, 'wb') as vec:
+    #                 pickle.dump(vectorizer, vec, protocol=pickle.HIGHEST_PROTOCOL)
+    #         with open(out_encoder_file, 'wb') as le:
+    #             pickle.dump(encoder, le, protocol=pickle.HIGHEST_PROTOCOL)
+    #         with open(out_model_file, 'wb') as ml:
+    #             pickle.dump(model, ml, protocol=pickle.HIGHEST_PROTOCOL)
+    #         with open(report_file, 'w') as f:
+    #             f.write('\nClassification_report: \n')
+    #             f.write(classification_report(y_val, y_predict, target_names=encoder.classes_))
+    #
+    # avg_accuracy = str(np.sum(accuracies)/len(accuracies))
+    # avg_f1 = str(np.sum(f1s)/len(f1s))
+    # with open(report_file, 'a') as f:
+    #     f.write('Average accuracy: ')
+    #     f.write(avg_accuracy)
+    #     f.write('\nAverage f1: ')
+    #     f.write(avg_f1)
